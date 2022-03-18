@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url('./pexels-roberto-nickson-2559941.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .back-frem{
+        width: 18rem;
+        height: 6rem;
+        background: white;
+        border-radius: 23px;
+        position: fixed;
+        bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .back-frem .back-chang{
+        width: 91px;
+        height: 91px;
+        background: wheat;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 23px;
+    }
+    .back-frem .back-chang img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <div class="back-frem">
+        <div class="back-chang" onclick="background1()"><img src="./pexels-roberto-nickson-2559941.jpg" alt=""></div>
+        <div class="back-chang" onclick="background2()"><img src="./rutger-van-de-steeg-all-new-era-part-4.jpg" alt=""></div>
+        <div class="back-chang" onclick="background3()"><img src="./wp8080217.jpg" alt=""></div>
+    </div>
+</body>
+<script>
+    function background1() {
+        document.querySelector('body').style.background = "url('./pexels-roberto-nickson-2559941.jpg') center center / cover";
+    }
+    function background2() {
+        document.querySelector('body').style.background = "url('./rutger-van-de-steeg-all-new-era-part-4.jpg') center center / cover";
+    }
+    function background3() {
+        document.querySelector('body').style.background = "url('./wp8080217.jpg') center center / cover";
+    }
+</script>
+</html>
